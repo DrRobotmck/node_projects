@@ -1,0 +1,18 @@
+include ./head.jade
+	body
+		ul
+			div.students.show
+				h4!= name
+				p!= github_handle
+				p!= is_instructor
+				a( href=( '/students' ) ): p Back
+				form(action='/students/' + id, method='POST')
+					input(type='hidden', name="_method", value='DELETE')
+					button Delete
+				a( href="/students/" + id + "/edit"): p Edit
+
+				if assignments
+					each assignment in assignments
+						p!= "Completeness: " + assignment.completeness + " Comfortability:" + assignment.comfortability
+
+	script(src='/js/delete.js')

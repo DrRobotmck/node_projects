@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "macadocious",
+    "password": null,
+    "database": "todoly_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

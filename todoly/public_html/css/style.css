@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+body {
+	font-family: Lato;
+	text-align: center;
+	background: url(http://subtlepatterns.com/patterns/geometry.png);
+}
+
+section {
+	width: 50%;
+  height: 75px;
+  margin: 0 auto;
+  border: 10px solid beige;
+  border-radius: 10px;
+}
+section input {
+	height: 85%;
+	width: 75%;
+	float: left;
+	font-size: 14px;
+	border: 1px solid rgba(0,0,0,0);
+}
+section button {
+	height: 95%;
+	width: 20%;
+	font-size: 14px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0);
+	border: 1px solid rgba(0,0,0,0);
+}
+
+section button:hover {
+	color: indianred;
+}
+
+.todo-item {
+	color: #333;
+	margin: 20px auto;
+	width: 50%;
+	height: 125px;
+	border: 12px solid beige;
+	border-radius: 20px;
+	background: rgba(127,127,127, .5);
+}
+
+
+label {
+	color: beige;
+}
+.delete {
+	color: indianred;
+}
+
+.done {
+	border: 12px solid indianred;
+}
+
+p.description {
+	color: whitesmoke;
+	font-size: 20px;
+}

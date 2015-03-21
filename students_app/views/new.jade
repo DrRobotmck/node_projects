@@ -1,0 +1,10 @@
+include ./head.jade
+	body
+		h1!= 'Make a new student!'
+		form(action='/students', method='post')
+			label!= 'Github Handle'
+				input(type='text' name='github_handle')
+			br
+			label!= 'Name'
+				input(type='text' name='name')
+			button Submit

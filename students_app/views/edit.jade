@@ -1,0 +1,10 @@
+include ./head.jade
+	body
+		h1!= 'Edit a Student'
+		form(action="/students/" + id , method="post")
+			input(type='hidden', name="_method", value="put")
+			label!= 'Github Handle'
+				input(type='text', name='github_handle' value= github_handle)
+			label!= 'Name'
+				input(type="text", name="name" value= name || 'Steve')
+			button Submit

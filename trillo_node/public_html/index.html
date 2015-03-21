@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trillo</title>
+
+	<link rel="stylesheet" href="/css/normalize.css">
+	<!-- Vendor Libraries -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/backbone-forms/0.14.0/backbone-forms.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script>
+
+
+	<!-- App -->
+	<script src="js/app.js"></script>
+
+	<!-- Backbone Scripts -->
+	<script src="js/models/cardModel.js"></script>
+	<script src="js/collections/cardsCollection.js"></script>
+
+	<script src="js/views/loginView.js"></script>
+	<script src="js/views/cardView.js"></script>
+	<script src="js/views/cardListView.js"></script>
+	<script src="js/router/router.js"></script>
+
+</head>
+<body>
+	<div class='container'>
+		<h1>Trillo</h1>
+		<section class='main info'></section>
+		<section class='main list todo'>
+			<h3>Doing</h3>
+		</section>
+		<section class='main list done'>
+			<h3>Done</h3>
+		</section>
+	</div>
+</body>
+
+</html>

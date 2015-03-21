@@ -1,0 +1,11 @@
+include ./head.jade
+	body
+		form(action='/students/search')
+			input(type='text' name='search')
+			button Submit
+		each input in students
+			div.students
+				h4!= input.values.name
+				p!= input.values.github_handle
+				p!= input.values.is_instructor
+				a( href=( '/students/' + input.values.id ) ) Click to View
